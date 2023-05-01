@@ -10,7 +10,9 @@ import com.example.quotes.screens.QuoteItem
 fun QuoteList(data : Array<Quote>, onClick: (quote: Quote) -> Unit) {
     LazyColumn(content = {
         items(data) {
-            QuoteItem(quote = it, onClick)
+            if(it.text.isNotEmpty()) {
+                QuoteItem(quote = it, onClick)
+            }
         }
     })
 }
