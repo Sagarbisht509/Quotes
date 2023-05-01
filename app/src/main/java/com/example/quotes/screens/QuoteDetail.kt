@@ -31,7 +31,7 @@ fun QuoteDetails(quote: Quote) {
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .fillMaxWidth(1f)
+            .fillMaxSize(1f)
             .background(
                 Brush.linearGradient(
                     colors = listOf(
@@ -82,7 +82,6 @@ fun QuoteDetails(quote: Quote) {
                         .padding(top = 5.dp)
                         .align(Alignment.End)
                 )
-
             }
         }
     }
